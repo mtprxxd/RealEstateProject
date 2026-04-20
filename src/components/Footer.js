@@ -36,7 +36,7 @@ export default function Footer() {
             {[Globe, Share2, ExternalLink, Unlink].map((Icon, i) => (
               <a
                 key={i}
-                href="#"
+                href="/"
                 className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-gold-400 hover:border-gold-500/40 transition-all"
               >
                 <Icon size={15} />
@@ -121,7 +121,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(t => (
-              <a key={t} href="#" className="text-white/25 hover:text-gold-500/60 text-xs tracking-wide transition-colors">
+              <a key={t} href="/" className="text-white/25 hover:text-gold-500/60 text-xs tracking-wide transition-colors">
                 {t}
               </a>
             ))}

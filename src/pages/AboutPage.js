@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Globe, TrendingUp, CheckCircle } from 'lucide-react';
+import { Award, Users, Globe, TrendingUp, } from 'lucide-react';
 
 const milestones = [
   { year: '2020', title: 'Founded in Faridabad', desc: 'Ashwini Vashisht established KARYA with a vision to redefine luxury property consultancy in India.' },

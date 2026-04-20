@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  ChevronRight, ArrowRight, Star, Award, Home, TrendingUp,
+  ChevronRight, ArrowRight, Award, Home, TrendingUp,
   Shield, Phone, ChevronLeft, Quote
 } from 'lucide-react';
 import PropertyCard from '../components/PropertyCard';
