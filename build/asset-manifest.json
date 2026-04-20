@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.242b8a24.css",
+    "main.js": "/static/js/main.fea35a08.js",
+    "static/media/karya_Logo.png": "/static/media/karya_Logo.08b5af02feaf34a71f17.png",
+    "index.html": "/index.html",
+    "main.242b8a24.css.map": "/static/css/main.242b8a24.css.map",
+    "main.fea35a08.js.map": "/static/js/main.fea35a08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242b8a24.css",
+    "static/js/main.fea35a08.js"
+  ]
+}
