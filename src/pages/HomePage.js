@@ -272,7 +272,7 @@ export default function HomePage() {
               Ashwani Vashisht has been synonymous with excellence in Indian luxury real estate for over 18 years. Our philosophy is simple: every client deserves the finest property, matched perfectly to their vision and lifestyle.
             </p>
             <p className="text-charcoal-500 leading-relaxed mb-8">
-              From the heritage havelis of Rajasthan to the gleaming penthouses of Mumbai's skyline, we have facilitated some of India's most significant property transactions with integrity, expertise, and unmatched market knowledge.
+             From the established residential sectors of Faridabad to the modern high-rise developments along the city’s evolving skyline, we have facilitated some of the region’s most significant property transactions with integrity, expertise, and unmatched market knowledge
             </p>
             <div className="flex flex-wrap gap-6 mb-8">
               {[['240+', 'Happy Families'], ['₹30 Cr+', 'Total Value'], ['20+', 'Cities Covered']].map(([v, l]) => (

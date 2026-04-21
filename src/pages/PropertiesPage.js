@@ -4,7 +4,7 @@ import PropertyCard from '../components/PropertyCard';
 import { featuredProperties } from '../utils/data';
 
 const types = ['All', 'Residential', 'Condominiums','Luxury Home', 'Apartments', 'Multiple Storey', 'Builder Floors'];
-const cities = ['All Cities', 'Gurugram','Faridabad', 'Greater faridabad', 'Delhi',];
+const cities = ['All Cities', 'Noida','Faridabad', 'Greater faridabad',];
 
 export default function PropertiesPage() {
   const [selectedType, setSelectedType] = useState('All');
@@ -30,7 +30,7 @@ export default function PropertiesPage() {
     {
       id: 8,
       name: 'ERA Landmarks',
-      location: 'Noida',
+      location: 'Sector-76, Faridabad',
       type: 'Heritage Complex',
       beds: null,
       baths: null,

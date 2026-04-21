@@ -13,10 +13,10 @@ const milestones = [
 ];
 
 const team = [
+  // { name: 'Vikram Malhotra', role: 'Head of Luxury Residential', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85', initials: 'VM' },
   { name: 'Ashwani Vashisht', role: 'Founder & Principal Consultant', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=85', initials: 'AV' },
-  { name: 'Vikram Malhotra', role: 'Head of Luxury Residential', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85', initials: 'VM' },
-  { name: 'Priya Sharma', role: 'Senior Property Advisor', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=85', initials: 'PS' },
-  { name: 'Arjun Mehta', role: 'Investment Strategist', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85', initials: 'AM' },
+  // { name: 'Priya Sharma', role: 'Senior Property Advisor', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=85', initials: 'PS' },
+  // { name: 'Arjun Mehta', role: 'Investment Strategist', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85', initials: 'AM' },
 ];
 
 const values = [
@@ -44,7 +44,7 @@ export default function AboutPage() {
          <h1
   className="text-white mb-5"
 >
-  About Ashwani Vashisht
+  About Ashwanni Vashisht
 </h1>
           <p className="text-white/60 text-lg leading-relaxed">
             10 years of passion, expertise, and an unwavering commitment to connecting India's finest properties with discerning clients.
@@ -182,12 +182,12 @@ export default function AboutPage() {
               className="text-charcoal-900"
               style={{ fontFamily: '"Playfair Display", serif', fontSize: 'clamp(28px, 4vw, 46px)', fontWeight: 700 }}
             >
-              Meet Our Team
+              Meet Our Expert
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, i) => (
-              <div key={i} className="text-center group">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+  {team.map((member, i) => (
+    <div key={i} className="text-center group w-72 mx-auto">
                 <div className="relative mb-5 overflow-hidden rounded-2xl">
                   <div className="w-full h-72 bg-charcoal-100 overflow-hidden rounded-2xl">
                     <div

@@ -121,7 +121,7 @@ export const featuredProperties = [
   {
     id: 5,
     name: 'Emerald Home adevelopers',
-    location: 'Prime Locations in faridabad',
+    location: 'Sector-88, Faridabad',
     type: 'Builder Floors',
     beds: null,
     baths: null,
@@ -165,7 +165,7 @@ export const testimonials = [
     name: 'Priya Kapoor',
     role: 'Corporate Executive, Faridabad',
     avatar: 'PK',
-    text: 'We found our dream home in Gurugram through KARYA. The team\'s knowledge of the luxury market is unmatched. Every detail was handled with utmost professionalism.',
+    text: 'We found our dream home in Faridabad through KARYA. The team\'s knowledge of the luxury market is unmatched. Every detail was handled with utmost professionalism.',
   },
   {
     name: 'Arjun Singhania',

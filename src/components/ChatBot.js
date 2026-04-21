@@ -72,7 +72,7 @@ export default function ChatBot() {
       const data = await response.json();
       const reply =
         data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-        "Great choice! 🏡 Are you looking for an apartment, villa, or commercial property?.";
+        "Hi! Are you looking for an apartment, villa, or commercial property?.";
 
       setMessages(prev => [...prev, { role: 'assistant', text: reply }]);
     } catch {
