@@ -26,7 +26,7 @@ export const heroSlides = [
   {
     image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=85',
     title: 'Luxury Home',
-    subtitle: 'Gurugram & Delhi NCR',
+    subtitle: 'Faridabad & Noida',
     tag: 'Exclusive Collection',
   },
   {
@@ -52,8 +52,8 @@ export const heroSlides = [
 export const featuredProperties = [
   {
     id: 1,
-    name: 'Customize Homes',
-    location: 'Delhi NCR',
+    name: 'Adore Realtech',
+    location: 'Greater Faridabad',
     type: 'Luxury Villa',
     beds: null,
     baths: null,
@@ -69,9 +69,9 @@ export const featuredProperties = [
   },
   {
     id: 2,
-    name: 'Multiple Storey',
+    name: 'BPTP Limited',
     location: 'Faridabad,Haryana',
-    type: 'Featured',
+    type: 'Multiple Storey',
     beds: null,
     baths: null,
     area: '1,500 sq ft',
@@ -86,9 +86,9 @@ export const featuredProperties = [
   },
   {
     id: 3,
-    name: 'Premium Residences',
+    name: 'Amolilk Group',
     location: 'Greater faridabad',
-    type: 'Heritage ',
+    type: 'Heritage',
     beds: null,
     baths: null,
     area: '10,000 sq ft',
@@ -103,9 +103,9 @@ export const featuredProperties = [
   },
   {
     id: 4,
-    name: 'Condominiums',
+    name: 'Triveni Group',
     location: 'OutSkirts of Faridabad',
-    type: 'Luxury Apartment',
+    type: 'Condominiums',
     beds: null,
     baths: null,
     area: 'Max Space',
@@ -120,9 +120,9 @@ export const featuredProperties = [
   },
   {
     id: 5,
-    name: 'Builder Floors',
+    name: 'Emerald Home adevelopers',
     location: 'Prime Locations in faridabad',
-    type: 'L-Type Corner',
+    type: 'Builder Floors',
     beds: null,
     baths: null,
     area: 'As per Expectations',
@@ -137,7 +137,7 @@ export const featuredProperties = [
   },
   {
     id: 6,
-    name: 'Communal Garden',
+    name: 'Omaxe Limited',
     location: 'near Omaxe city, Faridabad',
     type: 'Bungalow',
     beds: null,
@@ -159,17 +159,17 @@ export const testimonials = [
     name: 'Rajan Mehta',
     role: 'Business Tycoon, Faridabad',
     avatar: 'RM',
-    text: 'Ashwani Vashisht delivered beyond our expectations. The property curation was impeccable and the entire process seamless. Truly the finest real estate experience in Haryana.',
+    text: 'Ashwanni Vashisht delivered beyond our expectations. The property curation was impeccable and the entire process seamless. Truly the finest real estate experience in Haryana.',
   },
   {
     name: 'Priya Kapoor',
-    role: 'Corporate Executive, Gurugram',
+    role: 'Corporate Executive, Faridabad',
     avatar: 'PK',
     text: 'We found our dream home in Gurugram through KARYA. The team\'s knowledge of the luxury market is unmatched. Every detail was handled with utmost professionalism.',
   },
   {
     name: 'Arjun Singhania',
-    role: 'Tech Entrepreneur, Delhi',
+    role: 'Tech Entrepreneur, Noida',
     avatar: 'AS',
     text: 'From NRI investment advice to final possession, Ashwini and her team were exceptional. The transparency and guidance throughout was reassuring.',
   },

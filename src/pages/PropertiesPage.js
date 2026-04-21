@@ -15,9 +15,9 @@ export default function PropertiesPage() {
     ...featuredProperties,
     {
       id: 7,
-      name: 'Commercial Apartments',
-      location: 'Cyber City, Gurugram',
-      type: 'Luxury Apartment',
+      name: 'RPS Group',
+      location: 'Sector-88, Faridabad',
+      type: 'Residential',
       area: '2,800 sq ft',
       image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=85',
       images: [
@@ -29,8 +29,8 @@ export default function PropertiesPage() {
     },
     {
       id: 8,
-      name: 'Specialized Properties',
-      location: 'NCR, Faridabad & Gurugram',
+      name: 'ERA Landmarks',
+      location: 'Noida',
       type: 'Heritage Complex',
       beds: null,
       baths: null,
