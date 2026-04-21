@@ -3,7 +3,7 @@ import logo from './karya_Logo.png';
 
 export default function Logo({ size = 'md' }) {
   const sizes = {
-    sm: 150
+    sm: 110
        
   };
 

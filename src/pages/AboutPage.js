@@ -1,5 +1,8 @@
 import React from 'react';
+
 import { Award, Users, Globe, TrendingUp, } from 'lucide-react';
+
+
 
 const milestones = [
   { year: '2020', title: 'Founded in Faridabad', desc: 'Ashwini Vashisht established KARYA with a vision to redefine luxury property consultancy in India.' },
@@ -38,12 +41,11 @@ export default function AboutPage() {
         />
         <div className="relative max-w-3xl mx-auto">
           <p className="text-gold-400 text-xs font-medium tracking-widest uppercase mb-4">Our Story</p>
-          <h1
-            className="text-white mb-5"
-            style={{ fontFamily: '"Playfair Display", serif', fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 700 }}
-          >
-            About Ashwanni Vashisht
-          </h1>
+         <h1
+  className="text-white mb-5"
+>
+  About Ashwani Vashisht
+</h1>
           <p className="text-white/60 text-lg leading-relaxed">
             10 years of passion, expertise, and an unwavering commitment to connecting India's finest properties with discerning clients.
           </p>
