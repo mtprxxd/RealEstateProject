@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Award, Users, Globe, TrendingUp, } from 'lucide-react';
 import LOGO from '../components/khatu_shyam.jpg';
+import profile from '../components/profile_main.jpeg';
 
 
 
@@ -15,7 +16,7 @@ const milestones = [
 
 const team = [
   // { name: 'Vikram Malhotra', role: 'Head of Luxury Residential', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85', initials: 'VM' },
-  { name: 'Ashwani Vashisht', role: 'Founder & Principal Consultant', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=85', initials: 'AV' },
+  { name: 'Ashwani Vashisht', role: 'Founder & Principal Consultant',  initials: '' },
   // { name: 'Priya Sharma', role: 'Senior Property Advisor', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=85', initials: 'PS' },
   // { name: 'Arjun Mehta', role: 'Investment Strategist', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85', initials: 'AM' },
 ];
@@ -145,7 +146,7 @@ export default function AboutPage() {
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-gold-300 via-gold-500 to-gold-300 hidden md:block" />
             <div className="space-y-10" >
-            <img src = {LOGO}
+            <img src = {LOGO} alt= ''
             className="w-[380px] h-auto rounded-2xl shadow-xl object-cover absolute top-100 right-0 h-8 w-8 bg-blue-500"
             />
               {milestones.map((m, i) => (
@@ -202,6 +203,7 @@ export default function AboutPage() {
                       }}
                     >
                       {member.initials}
+                    <img src = {profile} alt = ''/>
                     </div>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
