@@ -48,7 +48,7 @@ export default function AboutPage() {
   About Ashwanni Vashisht
 </h1>
           <p className="text-white/60 text-lg leading-relaxed">
-            10 years of passion, expertise, and an unwavering commitment to connecting India's finest properties with discerning clients.
+            5+ years of passion, expertise, and an unwavering commitment to connecting India's finest properties with discerning clients.
           </p>
         </div>
       </section>
