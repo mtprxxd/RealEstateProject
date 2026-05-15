@@ -45,28 +45,31 @@ export default function Navbar() {
       }`}
       style={{ fontFamily: '"Jost", sans-serif' }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
           <Logo variant="light" size="sm" />
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map(link => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`text-sm font-medium tracking-widest uppercase transition-colors duration-200 ${
-                isActive(link.to)
-                  ? 'text-gold-400'
-                  : 'text-white/80 hover:text-gold-400'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
+{/* Desktop Links */}
+<div className="hidden lg:flex items-center gap-8">
+  {navLinks.map(link => (
+    <Link
+      key={link.to}
+      to={link.to}
+      className={`text-sm font-medium tracking-widest uppercase transition-colors duration-200 ${
+        isActive(link.to)
+          ? 'text-gold-400'
+          : scrolled || !isHome
+          ? 'text-black hover:text-gold-400'
+          : 'text-white hover:text-gold-400'
+      }`}
+    >
+      {link.label}
+    </Link>
+  ))}
+</div>
 
         {/* Auth Buttons */}
         <div className="hidden lg:flex items-center gap-4">
@@ -129,7 +132,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-charcoal-900/98 backdrop-blur-xl border-t border-gold-500/20">
+        <div className="lg:hidden bg-charcoal-900/98 backdrop-blur-xl border-t border-gold-500/20 animate-fadeIn">
           <div className="px-6 py-6 flex flex-col gap-4">
             {navLinks.map(link => (
               <Link

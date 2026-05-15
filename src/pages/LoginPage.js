@@ -61,7 +61,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right Panel — Form */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center px-6 py-12" style={{ background: '#fdfaf5' }}>
+      <div className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-6 py-10 md:py-12" style={{ background: '#fdfaf5' }}>
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden mb-10 flex justify-center">
@@ -71,7 +71,7 @@ export default function LoginPage() {
           <div className="mb-10">
             <h2
               className="text-charcoal-900 mb-2"
-              style={{ fontFamily: '"Playfair Display", serif', fontSize: 34, fontWeight: 700 }}
+              style={{ fontFamily: '"Playfair Display", serif', fontSize: 'clamp(28px, 5vw, 34px)', fontWeight: 700 }}
             >
               Welcome Back
             </h2>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MapPin, Bed, Bath, Maximize2, ArrowLeft, ArrowRight } from 'lucide-react';
+// import { motion } from 'framer-motion';
 
 export default function PropertyCard({ property }) {
   const [current, setCurrent] = useState(0);
@@ -35,69 +36,62 @@ export default function PropertyCard({ property }) {
       onMouseLeave={() => { setIsHovered(false); setCurrent(0); }}
     >
       {/* Image Carousel */}
-      <div className="relative h-64 overflow-hidden">
-        {images.map((img, i) => (
-          <img
-            key={i}
-            src={img}
-            alt={property.name}
-            className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
-            style={{
-              opacity: i === current ? 1 : 0,
-              transform: i === current ? 'scale(1.03)' : 'scale(1)',
-            }}
-            loading="lazy"
-          />
-        ))}
+<div className="relative h-56 sm:h-64 overflow-hidden touch-pan-y">
+  {images.map((img, i) => (
+    <img
+      key={i}
+      src={img}
+      alt={property.name}
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
+      style={{
+        opacity: i === current ? 1 : 0,
+        transform: i === current ? 'scale(1.03)' : 'scale(1)',
+      }}
+      loading="lazy"
+    />
+  ))}
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-transparent" />
 
-        {/* Tag */}
-        <div className="absolute top-4 left-4">
-          <span className="bg-gold-500 text-charcoal-900 text-xs font-semibold px-3 py-1 rounded tracking-wider uppercase">
-            {property.tag}
-          </span>
-        </div>
+  <div className="absolute top-4 left-4">
+    <span className="bg-gold-500 text-charcoal-900 text-[10px] sm:text-xs font-semibold px-3 py-1 rounded tracking-wider uppercase">
+      {property.tag}
+    </span>
+  </div>
 
-        {/* Carousel Controls */}
-        {images.length > 1 && isHovered && (
-          <div className="absolute inset-0 flex items-center justify-between px-3">
-            <button
-              onClick={prev}
-              className="w-8 h-8 rounded-full bg-charcoal-900/70 flex items-center justify-center text-white hover:bg-gold-500 hover:text-charcoal-900 transition-all"
-            >
-              <ArrowLeft size={14} />
-            </button>
-            <button
-              onClick={next}
-              className="w-8 h-8 rounded-full bg-charcoal-900/70 flex items-center justify-center text-white hover:bg-gold-500 hover:text-charcoal-900 transition-all"
-            >
-              <ArrowRight size={14} />
-            </button>
-          </div>
-        )}
+  {images.length > 1 && (
+    <>
+      <button
+        onClick={prev}
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center"
+      >
+        <ArrowLeft size={14} />
+      </button>
 
-        {/* Carousel Dots */}
-        {images.length > 1 && (
-          <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5">
-            {images.map((_, i) => (
-              <button
-                key={i}
-                onClick={(e) => { e.stopPropagation(); setCurrent(i); }}
-                className={`carousel-dot ${i === current ? 'active' : ''}`}
-              />
-            ))}
-          </div>
-        )}
+      <button
+        onClick={next}
+        className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center"
+      >
+        <ArrowRight size={14} />
+      </button>
+    </>
+  )}
 
-        {/* Type badge */}
-        <div className="absolute bottom-4 right-4">
-          <span className="text-white/80 text-xs font-medium tracking-wider bg-charcoal-900/50 backdrop-blur-sm px-2 py-1 rounded">
-            {property.type}
-          </span>
-        </div>
-      </div>
+  {images.length > 1 && (
+    <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5">
+      {images.map((_, i) => (
+        <button
+          key={i}
+          onClick={(e) => {
+            e.stopPropagation();
+            setCurrent(i);
+          }}
+          className={`carousel-dot ${i === current ? 'active' : ''}`}
+        />
+      ))}
+    </div>
+  )}
+</div>
 
       {/* Card Body */}
       <div className="p-6" style={{ fontFamily: '"Jost", sans-serif' }}>

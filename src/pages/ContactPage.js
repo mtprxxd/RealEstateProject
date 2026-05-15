@@ -48,7 +48,7 @@ export default function ContactPage() {
 
       {/* Main Content */}
       <section className="py-20 px-6" style={{ background: '#f9f5ef' }}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-14">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-14">
           {/* Left Info */}
           <div className="lg:col-span-2 space-y-10">
             <div>
@@ -102,7 +102,7 @@ export default function ContactPage() {
 
           {/* Right Form */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-2xl shadow-lg border border-charcoal-100 p-10">
+            <div className="bg-white rounded-2xl shadow-lg border border-charcoal-100 p-5 sm:p-8 md:p-10">
               {submitted ? (
                 <div className="text-center py-16">
                   <div className="w-20 h-20 rounded-full bg-gold-50 border-2 border-gold-300 flex items-center justify-center mx-auto mb-6">

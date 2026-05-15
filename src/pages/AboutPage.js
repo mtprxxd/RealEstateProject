@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Award, Users, Globe, TrendingUp, } from 'lucide-react';
-import LOGO from '../components/khatu_shyam.jpg';
 import profile from '../components/profile_main.jpeg';
 
 
@@ -146,9 +145,9 @@ export default function AboutPage() {
           <div className="relative">
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-gold-300 via-gold-500 to-gold-300 hidden md:block" />
             <div className="space-y-10" >
-            <img src = {LOGO} alt= ''
+            {/* <img src = {LOGO} alt= ''
             className="w-[380px] h-auto rounded-2xl shadow-xl object-cover absolute top-100 right-0 h-8 w-8 bg-blue-500"
-            />
+            /> */}
               {milestones.map((m, i) => (
                 <div key={i} className={`flex items-center gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div className="flex-1 md:text-right">

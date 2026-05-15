@@ -58,7 +58,7 @@ export default function ServicesPage() {
     <div style={{ paddingTop: 88, fontFamily: '"Jost", sans-serif' }}>
       {/* Hero */}
       <section
-        className="relative py-28 px-6 text-center overflow-hidden"
+        className="relative py-20 md:py-28 px-4 sm:px-6 text-center overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a1613 0%, #2a2520 100%)' }}
       >
         <img
@@ -83,7 +83,7 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="py-24 px-6" style={{ background: '#f9f5ef' }}>
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {services.map((svc, i) => (
               <div
                 key={i}
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                     </div>
                   </div>
                 </div>
-                <div className="p-8">
+                <div className="p-5 sm:p-6 md:p-8">
                   <p className="text-charcoal-500 text-sm leading-relaxed mb-6">{svc.desc}</p>
                   <div className="grid grid-cols-2 gap-2">
                     {svc.features.map((f, j) => (

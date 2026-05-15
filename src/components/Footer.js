@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Globe, Share2, ExternalLink, Unlink } from 'lucide-react';
-import Logo from './Logo';
+import Lord from '../components/khatu_shyam.jpg';
 
 export default function Footer() {
   return (
@@ -25,10 +25,10 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <Logo variant="light" size="sm" />
+          <img src = {Lord} alt = '' variant="light" size="sm"className="h-36 sm:h-44 md:h-48 w-auto rounded-lg object-cover" />
           <p className="mt-5 text-white/50 text-sm leading-relaxed">
             India's most trusted luxury real estate consultancy. Decades of expertise in premium residential and commercial properties across India's finest addresses.
           </p>
