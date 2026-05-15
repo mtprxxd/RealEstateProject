@@ -203,11 +203,30 @@ export default function HomePage() {
           </div>
 
           {/* Properties Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map(property => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
-          </div>
+          {/* Properties Section */}
+<div className="relative">
+
+  {/* Mobile + Tablet Carousel */}
+  <div className="lg:hidden overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+    <div className="flex gap-5 px-1 pb-4 w-max">
+      {featuredProperties.map((property) => (
+        <div
+          key={property.id}
+          className="snap-center w-[88vw] sm:w-[420px] flex-shrink-0"
+        >
+          <PropertyCard property={property} />
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Desktop Grid */}
+  <div className="hidden lg:grid grid-cols-3 gap-8">
+    {featuredProperties.map((property) => (
+      <PropertyCard key={property.id} property={property} />
+    ))}
+  </div>
+</div>
 
           <div className="text-center mt-12">
             <Link

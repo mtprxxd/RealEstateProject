@@ -31,18 +31,18 @@ export default function PropertyCard({ property }) {
 
   return (
     <div
-      className="property-card rounded-xl overflow-hidden bg-white shadow-md cursor-pointer group"
+  className="property-card rounded-2xl overflow-hidden bg-white/95 backdrop-blur-sm shadow-lg hover:shadow-2xl cursor-pointer group transition-all duration-500 hover:-translate-y-2 border border-white/40"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => { setIsHovered(false); setCurrent(0); }}
     >
       {/* Image Carousel */}
-<div className="relative h-56 sm:h-64 overflow-hidden touch-pan-y">
+<div className="relative h-56 sm:h-64 overflow-hidden">
   {images.map((img, i) => (
     <img
       key={i}
       src={img}
       alt={property.name}
-      className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
+      className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-out"
       style={{
         opacity: i === current ? 1 : 0,
         transform: i === current ? 'scale(1.03)' : 'scale(1)',
@@ -86,7 +86,9 @@ export default function PropertyCard({ property }) {
             e.stopPropagation();
             setCurrent(i);
           }}
-          className={`carousel-dot ${i === current ? 'active' : ''}`}
+          className={`carousel-dot transition-all duration-300 ${
+  i === current ? 'active scale-110' : 'opacity-70'
+}`}
         />
       ))}
     </div>

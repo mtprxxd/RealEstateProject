@@ -64,3 +64,47 @@ a {
     transform: none;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Hide Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Better Carousel Dots */
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.4);
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  width: 24px;
+  background: #d4a017;
+}
+
+/* Premium card hover */
+.property-card {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+/* Smooth touch */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
