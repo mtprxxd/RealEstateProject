@@ -66,10 +66,10 @@ export default function AboutPage() {
               <span style={{ fontStyle: 'italic', color: '#c8901a' }}>Real Estate in India</span>
             </h2>
             <p className="text-charcoal-500 leading-relaxed mb-5">
-              When Ashwanni Vashisht founded KARYA in 2020, she had one clear mission: to bring world-class property consultancy standards to India's burgeoning luxury real estate market. With a background in architecture and a deep passion for beautiful spaces, she understood that buying a premium property is not just a transaction — it's the beginning of a legacy.
+              When Ashwanni Vashisht founded KARYA in 2020, he had one clear mission: to bring world-class property consultancy standards to India's burgeoning luxury real estate market. With a background in architecture and a deep passion for beautiful spaces, she understood that buying a premium property is not just a transaction - it's the beginning of a legacy.
             </p>
             <p className="text-charcoal-500 leading-relaxed mb-8">
-              Today, KARYA stands as India's most trusted name in luxury real estate, with a portfolio spanning Delhi NCR, Faridabad, Gurugram and beyond. Our team of 60+ specialists brings together legal expertise, market analytics, architectural insight, and decades of relationship capital.
+              Today, KARYA stands as India's most trusted name in luxury real estate, with a portfolio spanning Omaze, Faridabad, Greater-Faridabad and beyond. Our team of 60+ specialists brings together legal expertise, market analytics, architectural insight, and decades of relationship capital.
             </p>
             <div className="grid grid-cols-2 gap-6">
               {[
