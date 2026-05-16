@@ -131,11 +131,11 @@ export default function ChatBot() {
               className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold"
               style={{ background: 'rgba(0,0,0,0.2)', color: '#1a1a1a' }}
             >
-              AV
+              KR
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: '#1a1a1a', fontFamily: '"Jost", sans-serif' }}>
-                AV Realty Advisor
+                KARYA Realty Advisor
               </p>
               <p className="text-xs" style={{ color: 'rgba(0,0,0,0.6)' }}>
                 {loading ? 'Typing…' : 'Online · Typically replies instantly'}

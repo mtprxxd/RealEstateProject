@@ -279,7 +279,7 @@ export default function HomePage() {
 
           {/* Content */}
           <div>
-            <p className="text-gold-500 text-xs font-medium tracking-widest uppercase mb-4">About AV Realty</p>
+            <p className="text-gold-500 text-xs font-medium tracking-widest uppercase mb-4">About KARYA Realty</p>
             <h2
               className="text-charcoal-900 mb-6"
               style={{ fontFamily: '"Playfair Display", serif', fontSize: 'clamp(28px, 3.5vw, 46px)', fontWeight: 700, lineHeight: 1.15 }}
@@ -413,16 +413,29 @@ export default function HomePage() {
               </div>
             ))}
 
-            {/* Dots */}
-            <div className="flex justify-center gap-2 mt-10">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setTestimIndex(i)}
-                  className={`carousel-dot ${i === testimIndex ? 'active' : ''}`}
-                />
-              ))}
-            </div>
+           {/* Dots + Feedback */}
+<div className="mt-10 flex flex-col items-center">
+  
+  {/* Dots */}
+  <div className="flex justify-center gap-2">
+    {testimonials.map((_, i) => (
+      <button
+        key={i}
+        onClick={() => setTestimIndex(i)}
+        className={`carousel-dot ${i === testimIndex ? 'active' : ''}`}
+      />
+    ))}
+  </div>
+
+  {/* Feedback Button
+  <Link
+    to="/contact"
+    className="mt-5 inline-flex items-center gap-3 text-white hover:text-gold-300 text-charcoal-900 font-semibold px-5 py-2 rounded-xl transition-all text-sm tracking-widest uppercase"
+  >
+    Your Feedback?
+  </Link> */}
+
+</div>
           </div>
         </div>
       </section>

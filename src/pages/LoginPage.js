@@ -56,7 +56,7 @@ export default function LoginPage() {
           >
             "Where Every Property<br />Tells a Story of Luxury"
           </p>
-          <p className="text-white/40 text-sm mt-3">— Ashwini Vashisht, Founder</p>
+          <p className="text-white/40 text-sm mt-3">— Ashwanni Vashisht, Founder</p>
         </div>
       </div>
 

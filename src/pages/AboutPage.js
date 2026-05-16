@@ -15,7 +15,7 @@ const milestones = [
 
 const team = [
   // { name: 'Vikram Malhotra', role: 'Head of Luxury Residential', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=85', initials: 'VM' },
-  { name: 'Ashwani Vashisht', role: 'Founder & Principal Consultant',  initials: '' },
+  { name: 'Ashwanni Vashisht', role: 'Founder & Principal Consultant',  initials: '' },
   // { name: 'Priya Sharma', role: 'Senior Property Advisor', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=85', initials: 'PS' },
   // { name: 'Arjun Mehta', role: 'Investment Strategist', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=85', initials: 'AM' },
 ];
